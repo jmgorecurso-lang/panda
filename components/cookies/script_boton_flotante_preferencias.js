@@ -1,6 +1,6 @@
 // Añadir un botón flotante para cambiar preferencias después de aceptar
 const floatingBtn = document.createElement('button');
-floatingBtn.innerHTML = '<img src="access/skull-1.svg">';
+floatingBtn.innerHTML = '<img src="access/oso.png">';
 floatingBtn.style.cssText = `
     position: fixed;
     bottom: 20px;

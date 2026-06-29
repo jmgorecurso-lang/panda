@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS -->
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eater&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="estilor1.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="scriptR41bs.js" defer></script>
+  <!-- SCRIPTS INDEPENDIENTES (con async - no necesitan orden) -->
+  <!-- <script async src="localiza.js"></script> -->
+  <title>Bootstrap</title>
+</head>
+
+<body>
+  <h1>Reto 4.1 Cards con Bootstrap y Modal</h1>
+
+  <!--contenedores-->
+  <div class="container">
+    <!-- tres cards-->
+    <div class="row text-center">
+      <div class="col-md-4 rounded-3 p-1">
+        <div class="card">
+          <img class="fluid rounded-3" src="https://cdn.deathgrind.club/s/vZeGj8-LPZD.webp" alt="">
+          <div class="card-body bg-dark shadow rounded-3">
+            <p class="text text-white">Contenido Tarjeta 1 </p>
+            <button class="btn btn-danger btn-outline-warning btn-lg view-details" data-product="detalle1">Ver Detalles</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-4 rounded-3 p-1">
+        <div class="card ">
+          <img class="fluid rounded-3" src="https://cdn.deathgrind.club/s/QNgR7zYdrvw.webp" alt="">
+          <div class="card-body bg-dark rounded-3">
+            <p class="text text-white">Contenido Tarjeta 2</p>
+            <button class="btn btn-danger btn-outline-warning btn-lg view-details" data-product="detalle2">Ver Detalles</button>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="col-md-4 rounded-3 p-1">
+        <div class="card">
+          <img class="fluid rounded-3 " src="https://cdn.deathgrind.club/s/kwPjzEjZPpM.webp" alt="">
+          <div class="card-body  bg-dark rounded-3">
+            <p class="text text-white">Contenido Tarjeta 3</p>
+            <button class="btn btn-danger btn-outline-warning btn-lg view-details" data-product="detalle3">Ver Detalles</button>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+<!-------------------MODAL DE BOOTSTRAP 5------------------------->
+<div class="modal fade" id="descriptionModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="modalProductLabel">Descripcion del producto</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div id="descriptionProduct" class="modal-description">
+          <!------Aqui se cargará la descripcion dinamicamente-->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secundary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

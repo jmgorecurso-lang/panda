@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+html {
+    /* para evitar los saltos al ir a los enlaces */
+    scroll-padding-top: 100px;
+    scroll-behavior: smooth;
+}
+.container {
+    color:black;
+}
+
+.logo-img {
+    object-fit: cover;
+    border-radius: 45px;
+}
+
+.text-logo {
+    color: #ebe6e5;
+}
+
+nav .nav-link {
+     color: rgb(14, 13, 13);
+    transition: color 0.3s ease;
+}
+
+nav .nav-item {
+    transition: transform 0.3s ease;
+
+}
+
+nav .nav-item:hover {
+    transform: translateY(-2px);
+}
+
+nav .nav-link:hover {
+    font-weight: 500;
+    color: #842029 !important;
+    /* rojo más oscuro */
+}
+
+.dropdown-item:hover {
+    background-color: #84202880 !important;
+}
+
+section {
+    scroll-margin-top: 80px;
+    margin-bottom: 0;
+}
+
+.about .nav-link {
+    color: white !important;
+    border: 1px solid #842029;
+    border-radius: 12px 12px 0 0;
+    background: transparent;
+    transition: 0.3s ease;
+}
+
+.about .nav-link i {
+    color: white;
+    font-size: 24px;
+    transition: 0.3s ease;
+}
+
+.about .nav-link:hover {
+    background-color: rgba(75, 74, 74, 0.514);
+    color: rgb(247, 244, 244);
+}
+
+.about .nav-item.active {
+    background-color: rgba(220, 53, 69, 0.8);
+    color: rgb(243, 218, 77) !important;
+    border: 1px solid rgba(220, 53, 69, 0.8);
+}
+
+.about .nav-link.active {
+    background-color: rgba(220, 53, 69, 0.85);
+    color: rgb(243, 240, 77) !important;
+    border: 1px solid rgba(220, 53, 69, 0.85);
+}
+
+
+.about .nav-link.active i {
+    color: rgb(103, 192, 243) !important;
+    text-shadow: 1px 1px 3px white;
+}
+
+
+
+.hero {
+    background-color: #cca279;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.donaciones {
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+}
+.donaciones:hover {
+    background-color: red;
+    transform: scale(112%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(220, 53, 69, 0.8);
+    /* rojo Bootstrap */
+    border-radius: 50%;
+    padding: 20px;
+    background-size: 60% 60%;
+}
+
+
+.d-block {
+    object-fit: cover;
+    width: 100%;
+    height: 550px;
+}
+
+.accordion {
+    height: 100%;
+}
+
+/* COLOR CUANDO el acordeon está CERRADO */
+.accordion-button.collapsed {
+    background-color: white;
+    color: black;
+}
+
+/* 2. COLOR CUANDO AL ACCORDEÓN ESTA ABIERTO */
+.accordion-button:not(.collapsed) {
+    background-color: rgba(220, 53, 70, 0.315);
+    color: #842029;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.gallery-img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+footer {
+    background: linear-gradient(174deg,rgba(237, 36, 36, 1) 0%, rgba(188, 194, 190, 1) 49%, rgba(242, 5, 40, 1) 100%);
+}
+footer small {
+    color: black;
+    font-style: oblique;
+}
+footer a:hover {
+    font-weight: 500;
+    color: #842029 !important;
+    /* rojo más oscuro */
+}
+
+/* ESTILOS DEL BOTÓN FLECHA SUBIR (SCROLL TOP) */
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 95px;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+    background-color: #0f0f0f;
+    /* color rojo que combina con el navbar */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+    z-index: 1000;
+    /* Por encima del navbar */
+    opacity: 0;
+    visibility: hidden;
+    /* Oculto inicialmente */
+    transform: scale(0.8);
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+/* Cuando la clase .show está presente (visible) */
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+/* Hover efecto */
+.scroll-to-top:hover {
+    background-color: #a71d2e;
+    transform: scale(1.08);
+    transition: all 0.2s ease;
+    color: white;
+}
+/* Estilo Formulario */
+.fdonacion{
+    margin: 0 auto;
+      display: flex;
+      width: 500px;
+      border: 1px solid;
+}
+.titul {
+    margin: 0 auto;
+      text-align: center;
+      background-color: #F54927;
+      width: 500px;
+      height: 105px;
+}
+label {
+    color: black;
+}
+.datos {
+      margin-top: 15px;
+      margin-left: 15px;
+      display: flex;
+      flex-direction: column;
+      width: 450px;
+    }
+
+    .datos input {
+      border: 1px solid;
+      width: 100%;
+    }
+     h3 {
+      margin-left: 15px;
+    }
+
+    .donar {
+      background-color: rgba(247, 111, 111, 0.692);
+      width: 100%;
+      height: 150px;
+      border-radius: 9px;
+      margin-left: 15px;
+    }
+
+    .plata {
+      display: flex;
+      justify-content: space-around;
+
+    }
+input:user-invalid {
+    color: red;
+
+}
+input:user-valid {
+    color: green;
+}
+
+.otraCantidad {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+    .check {
+      margin-top: 20px;
+    }
+
+        .envio {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-bottom: 40px;
+      margin-left: 20px;
+      gap: 110px;
+    }
+
+    .envio button {
+      width: 45%;
+    }
+
+    .envio button:disabled {
+      background-color: rgba(128, 128, 128, 0.479);
+      cursor: help;
+    }
+
+@media (min-width:900px) {
+    .hero {
+        min-height: 90dvh
+    }
+
+    section {
+        margin-bottom: 30px;
+    }
+}

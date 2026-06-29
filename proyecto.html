@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Eater&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="/Reto5Panda/css/style.css"> -->
+   <link rel="stylesheet" href="/PracticaFinal/Reto5Panda/components/cookies/styles_cookies_panda.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="scriptMoldal.js" defer></script>
+  <script src="/PracticaFinal/Reto5Panda/components/cookies/script_cookies_panda.js"></script>
+  <script src="/PracticaFinal/Reto5Panda/components/cookies/script_boton_flotante_preferencias.js"></script>
+
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="content-card">
+    <div class="container">
+      <div class="row text-center">
+        <!--Card 1-->
+        <div class="col-md-4">
+          <div class="card">
+            <img class="fluid rounded-3" src="access/pandaCard1.webp" alt="">
+            <div class="card-body rounded-3">
+              <p class="text text-white">Contenido Tarjeta 1 </p>
+
+              <button class="btn btn-danger view-details" data-bs-toggle="modal" data-bs-target="#descriptionModal" data-product="detalle1">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2-->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="access/pandaCard2.webp" alt="">
+            <div class="card-body rounded-3">
+              <p class="text text-white">Contenido Tarjeta 1 </p>
+
+              <button class="btn btn-danger view-details" data-bs-toggle="modal" data-bs-target="#descriptionModal" data-product="detalle2">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="access/pandaCard3.webp" alt="">
+            <div class="card-body rounded-3">
+              <p class="text text-dark">Contenido Tarjeta 1 </p>
+
+              <button class="btn btn-danger view-details" data-bs-toggle="modal" data-bs-target="#descriptionModal" data-product="detalle3">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--*********************MODAL*****************************-->
+  <!-- Preparando el Modal-->
+  <div class="modal fade" id="descriptionModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h4 class="model-title" id="modalProductLabel">Descripcion del proyecto</h4>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div id="descriptionProduct" class="modal-description">
+            <!------Aqui se cargará la descripcion dinamicamente-->
+          </div>
+        </div>
+        <!-- <div class="modal-meta">
+          <div id="modalMeta" class="modal-meta">
+          </div>
+        </div> -->
+        <!------Aqui se cargará la meta dinamicamente-->
+        <div class="modal-footer">
+          <div id="modalMeta" class="modal-meta">
+          </div>
+          <button type="button" class="btn btn-secundary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</body>
+</html>

@@ -14,7 +14,7 @@ html {
     scroll-padding-top: 100px;
     scroll-behavior: smooth;
 }
-.container {
+.container,contenedor {
     color:black;
 }
 

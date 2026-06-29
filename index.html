@@ -6,12 +6,16 @@
   <meta name="description" content="Panda rojo.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="/components/cookies/styles_cookies_panda.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" ></script>
   <script src="/js/script.js" defer></script>
+   <script src="/components/cookies/script_cookies_panda.js"></script>
+  <script src="/components/cookies/script_boton_flotante_preferencias.js"></script>
+
   <title>Panda Rojo</title>
 </head>
 
@@ -312,40 +316,79 @@
     </section>
     <!-- SECTION Proyecto -->
     <section class="container-fluid mt-3" id="proyecto">
-      <h3 class="text-center">Proyecto</h3>
-      <p>Nuestro proyecto busca proteger al panda rojo mediante:</p>
-      <ul>
-        <li>Educación ambiental en escuelas</li>
-        <li>Difusión en redes sociales</li>
-        <li>Apoyo a organizaciones de conservación</li>
-        <li>Promoción de la protección de bosques donde vive</li>
-      </ul>
-      <div class="container my-4">
-        <div class="row g-3">
-          <div class="col-12 col-md-4">
-            <div class="accordion border-0 shadow-sm h-100">
-              <img src="/access/panda5.webp" loading="lazy" class="accordion-img-top img-fluid gallery-img" alt="panda rojo">
+      <div class="contenedor">
+      <div class="row text-center">
+        <!--Card 1-->
+        <div class="col-md-4">
+          <div class="card">
+            <img class="fluid rounded-3" src="access/pandaCard1.webp" alt="">
+            <div class="card-body rounded-3">
+              <p class="text text-white">Contenido Tarjeta 1 </p>
+
+              <button class="btn btn-danger view-details" data-bs-toggle="modal" data-bs-target="#descriptionModal" data-product="detalle1">Ver Detalles</button>
             </div>
           </div>
-          <div class="col-12 col-md-4">
-            <div class="accordion border-0 shadow-sm h-100">
-              <img src="/access/panda4.webp" loading="lazy" class="accordion-img-top img-fluid gallery-img" alt="panda rojo">
+        </div>
+        <!-- Card 2-->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="access/pandaCard2.webp" alt="">
+            <div class="card-body rounded-3">
+              <p class="text text-white">Contenido Tarjeta 1 </p>
+
+              <button class="btn btn-danger view-details" data-bs-toggle="modal" data-bs-target="#descriptionModal" data-product="detalle2">Ver Detalles</button>
             </div>
           </div>
-          <div class="col-12 col-md-4">
-            <div class="accordion border-0 shadow-sm h-100">
-              <img src="/access/panda3.webp" loading="lazy" class="accordion-img-top img-fluid gallery-img" alt="panda rojo">
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="access/pandaCard3.webp" alt="">
+            <div class="card-body rounded-3">
+              <p class="text text-dark">Contenido Tarjeta 1 </p>
+
+              <button class="btn btn-danger view-details" data-bs-toggle="modal" data-bs-target="#descriptionModal" data-product="detalle3">Ver Detalles</button>
             </div>
           </div>
         </div>
       </div>
+    </div>
     </section>
+    <!--*********************MODAL*****************************-->
+  <!-- Preparando el Modal-->
+  <div class="modal fade" id="descriptionModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h4 class="model-title" id="modalProductLabel">Descripcion del proyecto</h4>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div id="descriptionProduct" class="modal-description">
+            <!------Aqui se cargará la descripcion dinamicamente-->
+          </div>
+        </div>
+        <!-- <div class="modal-meta">
+          <div id="modalMeta" class="modal-meta">
+          </div>
+        </div> -->
+        <!------Aqui se cargará la meta dinamicamente-->
+        <div class="modal-footer">
+          <div id="modalMeta" class="modal-meta">
+          </div>
+          <button type="button" class="btn btn-secundary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
     <!-- --------------------------- FORMULARIO------------------------------>
     <section class="formulario" >
       <div class="titul">
 
         <h2 class="mb-3">Protege al Panda Rojo</h2>
-        
+
       </div>
       <div class="fdonacion">
         <form action="#top https://formsubmit.co/jmgorecurso@gmail.com" id="miForm" method="post" onsubmit="enviarFormulario(event)">
@@ -394,6 +437,8 @@
       <small>&copy; 2026 Panda Rojo. Todos los derechos reservados.</small>
     </div>
   </footer>
+  <!-- contenedor cookies-->
+   <div id="contenedor-cookies"></div>
 
 
 

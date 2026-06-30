@@ -3,7 +3,7 @@ const floatingBtn = document.createElement('button');
 floatingBtn.innerHTML = '<img src="/access/favicon.ico">';
 floatingBtn.style.cssText = `
     position: fixed;
-    bottom: 30px;
+    bottom: 50px;
     left: 20px;
     width: 50px;
     height: 50px;

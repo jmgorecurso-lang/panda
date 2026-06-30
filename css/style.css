@@ -6,6 +6,7 @@ body {
     margin-top: 80px;
     display: flex;
     flex-direction: column;
+    background-color: #cca279;
 
 }
 
@@ -51,7 +52,7 @@ nav .nav-link:hover {
     background-color: #84202880 !important;
 }
 
-section {
+section .hero{
     scroll-margin-top: 80px;
     margin-bottom: 0;
 }
@@ -97,7 +98,7 @@ section {
 
 .hero {
     background-color: #cca279;
-    min-height: 70vh;
+    /* min-height: 70vh; */
     display: flex;
     align-items: center;
 }

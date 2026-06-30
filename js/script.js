@@ -31,16 +31,17 @@ const detalles = {
   const cantidad = document.getElementById('dinero');
   const libre = document.getElementById('enviar');
   // libre.disabled = !checkbox.checked;
- checkbox.addEventListener("change",
-  function(event){
-    if(this.checked){
-      cantidad.style.opacity="1";
-      envia();
-    }else{
-      cantidad.style.opacity="0";
-    }
-  }
- );
+  document.addEventListener('DOMContentLoaded', ()=>{
+    checkbox.addEventListener("change",function () {
+        if (this.checked) {
+          cantidad.style.opacity = "1";
+          envia();
+        } else {
+          cantidad.style.opacity = "0";
+        }
+      }
+    );
+    });
 
 function envia() {
   const libre = document.getElementById('enviar');

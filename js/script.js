@@ -32,7 +32,7 @@ const detalles = {
   const libre = document.getElementById('enviar');
   // libre.disabled = !checkbox.checked;
  checkbox.addEventListener("change",
-  function(){
+  function(event){
     if(this.checked){
       cantidad.style.opacity="1";
       envia();

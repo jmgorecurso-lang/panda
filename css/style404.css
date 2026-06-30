@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(54, 54, 54);
+    border: groove 3px rgba(228, 80, 80, 0.26);
+    height: 600px;
+    border-radius: 12px;
+}
+
+.error {
+    margin: 30px;
+
+}
+.error img {
+    border-radius: 12px;
+    box-shadow: -1px 5px 9px 6px rgba(247, 48, 48, 0.555);
+}
+.texto {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+
+   }
+.texto a {
+
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+
+    color: aliceblue;
+    text-align: center;
+    background-color: rgb(230, 41, 41);
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 6px black ;
+
+
+}
+.texto a:hover {
+    transform: scale(105%);
+}

@@ -27,21 +27,21 @@ const detalles = {
     },
 };
 
-  const checkbox = document.getElementById('otro');
-  const cantidad = document.getElementById('dinero');
-  const libre = document.getElementById('enviar');
-  // libre.disabled = !checkbox.checked;
-  document.addEventListener('DOMContentLoaded', ()=>{
-    checkbox.addEventListener("change",function () {
-        if (this.checked) {
-          cantidad.style.opacity = "1";
-          envia();
-        } else {
-          cantidad.style.opacity = "0";
-        }
-      }
-    );
-    });
+  // const checkbox = document.getElementById('otro');
+  // const cantidad = document.getElementById('dinero');
+  // const libre = document.getElementById('enviar');
+  // // libre.disabled = !checkbox.checked;
+  // document.addEventListener('DOMContentLoaded', ()=>{
+  //   checkbox.addEventListener("change",function () {
+  //       if (this.checked) {
+  //         cantidad.style.opacity = "1";
+  //         envia();
+  //       } else {
+  //         cantidad.style.opacity = "0";
+  //       }
+  //     }
+  //   );
+  //   });
 
 function envia() {
   const libre = document.getElementById('enviar');
